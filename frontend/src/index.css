@@ -37,7 +37,7 @@
 @font-face {
   font-family: 'tg-font-2';
   src: 
-  url('/SF-Pro-Display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  url('/SF-Pro-Display/SFPRODISPLAYBOLD.OTF') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
