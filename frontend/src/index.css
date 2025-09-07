@@ -26,6 +26,36 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'tg-font-1';
+  src: 
+  url('/tg-fonts/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Bold';
+  src: 
+  url('/SF-Pro-Display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF Pro Bold';
+  src: 
+  url('/SF-Pro-Display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF Pro Bold';
+  src: 
+  url('/SF-Pro-Display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .regular-fonts{
   font-family: 'SF Pro Regular', sans-serif;
   letter-spacing: 0.1px;
