@@ -1,11 +1,38 @@
-import tailwindcssAnimate from "tailwindcss-animate";
-
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  plugins: [require("tailwind-scrollbar-hide")],
   theme: {
     extend: {
+      screens: {
+        200: "200px",
+        300: "300px",
+        350: "350px",
+        400: "400px",
+        450: "450px",
+        500: "500px",
+        550: "550px",
+        600: "600px",
+        700: "700px",
+        750: "750px",
+        800: "800px",
+        850: "850px",
+        900: "900px",
+        950: "950px",
+        1000: "1000px",
+        1100: "1100px",
+        1200: "1200px",
+        1300: "1300px",
+        1400: "1400px",
+        1500: "1500px",
+        1600: "1600px",
+        1700: "1700px",
+        1800: "1800px",
+        1900: "1900px",
+        2000: "2000px",
+      },
       keyframes: {
         "slide-up-fade": {
           "0%": { opacity: "0", transform: "translateY(20px)" },
@@ -16,58 +43,23 @@ export default {
         "slide-up-fade": "slide-up-fade 0.4s ease-out",
       },
       colors: {
-        neonRed: "#FF3131",
-        neonBlue: "#00FFFF",
-        neonPurple: "#8A2BE2",
-        darkBg: "#0a0a0a",
-        whiteText: "#ffffff",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        chart: {
-          1: "hsl(var(--chart-1))",
-          2: "hsl(var(--chart-2))",
-          3: "hsl(var(--chart-3))",
-          4: "hsl(var(--chart-4))",
-          5: "hsl(var(--chart-5))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        "tg-purple": "#8774e1",
+        "tg-blue": "#3390EC",
+        "tg-bg": "#212121",
+        "tg-gray": "#aaaaaa",
+        "tg-light-gray": "#dfe1e5",
+        "tg-gray-d": "#707579",
+        "tg-dark-gray": "#717579",
+        "tg-btn-hover-light-purple": "#292730",
+        "tg-btn-hover-light-blue": "#eef6fd",
+        "tg-btn-hover-purple": "#7963dd",
+        "tg-btn-hover-blue": "#2283e4",
+        "tg-icon-hover": "#3f3f3f",
+        "tg-b-dark": "#383737",
+        "tg-avatar-pink": "#f47a9b",
+        "tg-avatar-blue": "#4793d9",
+        "tg-avatar-yellow": "#f78a3b"
       },
     },
   },
-  plugins: [tailwindcssAnimate],
 };

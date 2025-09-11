@@ -1,6 +1,30 @@
-/* @tailwind base; */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.label-animate{
+  @apply absolute -translate-y-1/2 dark:bg-tg-bg bg-white text-tg-gray px-1 left-3 z-10 peer-focus:font-[tg-font-1] dark:peer-focus:text-tg-purple peer-focus:text-tg-blue dark:group-hover:text-tg-purple group-hover:text-tg-blue transition-[top,font-size] duration-200 ease-in-out peer-focus:top-0 peer-focus:text-xs cursor-text;
+}
+
+/* Hide the default clear (×) button in WebKit browsers */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.tg-bg');
+  /* use Tailwind color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8774e1;
+  border-radius: 9999px;
+}
 
 @font-face {
   font-family: 'SF Pro Light';
@@ -37,23 +61,33 @@
 @font-face {
   font-family: 'tg-font-2';
   src: 
-  url('/SF-Pro-Display/SFPRODISPLAYBOLD.OTF') format('woff2');
+  url('/tg-fonts/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'SF Pro Bold';
+  font-family: 'tg-font-3';
   src: 
-  url('/SF-Pro-Display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  url('/tg-fonts/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'SF Pro Bold';
-  src: 
-  url('/SF-Pro-Display/SFPRODISPLAYBOLD.OTF') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+
+.tg-font-1{
+  font-family: 'tg-font-1'
+}
+
+.tg-font-2{
+  font-family: 'tg-font-2'
+}
+
+.tg-font-3{
+  font-family: 'tg-font-3'
+}
+
+.tg-font-4{
+  font-family: 'tg-font-4'
 }
 
 .regular-fonts{
